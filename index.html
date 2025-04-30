@@ -3,36 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Desenvolvido em Aula</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="displayFlex">
-            <div class="displayFlex gapCabecalho">
+    <header class="marginSite">
+        <nav class="alinharDivs">
+            <div class="alinharDivs gapDiv">
                 <a href="#"><img src="img/logo.png"></a>
-                <div class="displayFlex gapCabecalhoBotoes marginResponsiva">
-                    <a class="removeDecoration tamanhoBotaoCabecalho marginBotaoCabecalho" href="#">Graduação</a>
-                    <a class="removeDecoration tamanhoBotaoCabecalho" href="#">Blog</a>
+                <div class="alinharDivs gapDivGradBlog">
+                    <a href="#">Graduação</a>
+                    <a href="#">Blog</a>
                 </div>
             </div>
-            <div class="displayFlex gapCabecalho">
-                <div class="displayFlex bordaBusca marginResponsiva">
-                    <input class="inputBusca" type="text" placeholder="Buscar">
-                    <button class="botaoBusca"><img src="img/lupa.svg"></button>
+
+            <div class="alinharDivs gapDiv">
+                <div class="campoBusca alinharDivs">
+                    <input type="text" placeholder="Buscar">
+                    <button><img src="img/lupa.svg"></button>
                 </div>
-                <a class="removeDecoration quebraDeLinha displayFlexAmbienteV" href="#"><img src="img/cadeado.svg">Ambiente Virtual</a>
+                <a class="ambienteVirtual" href="#"><img src="img/cadeado.svg">Ambiente Virtual</a>
             </div>
         </nav>
     </header>
-
-    <section>
-        <h1>Nós somos uma <strong>Faculdade Digital</strong></h1>
-        <div>
-            <h2>Você, preparado para <strong>o futuro.</strong></h2>
-            <img src="img/seta-amarela.png">
-            <p>Se preparar para o mercado é uma coisa, prosperar nele é outra. <strong>Nossa graduação te ajuda com as duas.</strong></p>
-        </div>
-    </section>
+    <main class="marginSuperiorMain">
+        <section class="marginSite">
+            <h1>Nós somos uma <strong>Faculdade Digital</strong></h1>
+            <div class="alinharDivs">
+                <h2>Você, preparado para <strong>o futuro.</strong></h2>
+                <img src="img/seta-amarela.png">
+                <p class="textoSubTitulo">Se preparar para o mercado é uma coisa, prosperar nele é outra. <strong>Nossa graduação te ajuda com as duas.</strong></p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

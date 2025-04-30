@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    --cor-busca: #5913b441;
+    --cor-link: #5a13b4;
+    --cor-texto: #3B1270;
+    --cor-texto-destaque: #8E35FF;
+    --cor-texto-branco: #ffffff;
 
-    --cor-hover-texto: #5913b4;
+    --cor-background-roxo: #3B1270;
+    --cor-background-roxo-claro: #8E35FF;
 
-    --cor-primaria-fonte: #3B1270;
+    --cor-borda: 90, 19, 180;
 }
 
 *{
@@ -17,107 +21,94 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-h1, h2, p{
-    color: var(--cor-primaria-fonte);
-    font-weight: 400;
-}
-
-/*Início Cabeçalho*/
 header{
-    width: 100%;
+    padding-top: 1%;
 }
 
-nav{
-    padding: 1%;
+a{
+    text-decoration: none;
+    color: var(--cor-link);
 }
 
-/*Classe genérica para Display Flex*/
-.displayFlex{
+a:hover{
+    color: var(--cor-texto-destaque);
+}
+
+.marginSite{
+    margin: 0 15%;
+}
+
+.alinharDivs{
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
 }
 
-/*Gap utilizado no cabeçalho*/
-.gapCabecalho{
+.gapDiv{
     gap: 20%;
 }
 
-/*Gap entre os botões do cabeçalho*/
-.gapCabecalhoBotoes{
+.gapDivGradBlog{
     gap: 15%;
 }
 
-/*Borda do campo de Busca*/
-.bordaBusca{
-    border: 1px solid var(--cor-busca);
-    padding: 5px 10px;
-    gap: 3rem;
+.marginSuperiorMain{
+    margin-top: 10%;
 }
 
-.bordaBusca:hover{
-    border: 1px solid var(--cor-hover-texto);
+/*Início Cabeçalho*/
+
+.campoBusca{
+    border: 1px solid rgba(var(--cor-borda), 0.2);
+    padding: 2% 4%;
+    min-width: 220px;
 }
 
-/*Input de busca no Blog*/
-.inputBusca{
+input{
     border: none;
     outline: none;
-    color: #5913b489;
+    color: var(--cor-texto);    
 }
 
-.inputBusca::placeholder{
-    color: var(--cor-busca);
+input::placeholder{
+    color: var(--cor-texto);
+    opacity: 0.2;
 }
-/*Fim input de busca no Blog*/
 
-/*Imagem da Lupa no input de busca*/
-.botaoBusca{
+button{
     border: none;
-    background: none;
-    cursor:pointer;
+    background-color: var(--cor-texto-branco);
 }
 
-/*Removendo todo o estilo da Tag A*/
-.removeDecoration{
-    text-decoration: none;
-}
-
-/*Removendo a quebra de linha*/
-.quebraDeLinha{
+.ambienteVirtual{
+    font-weight: 600;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 5%;
 }
 
-/*Display Flex do ambiente Virtual*/
-.displayFlexAmbienteV{
-    display:flex;
-    align-items:center;
-    gap: 5px;
-}
-
-/*Versão Tablet*/
-@media screen and (max-width: 1024px){
-    .displayFlex{
-        flex-wrap: wrap;
-    }
-
-    .marginResponsiva{
-        margin: 5% 0;
-    }
-
-    .tamanhoBotaoCabecalho{
-        width: 70px;
-        height: auto;
-        text-align: center;;
-    }
-
-    .marginBotaoCabecalho{
-        margin: 10% 0;
-    }
-}
-
-/*Versão Mobile*/
 
 /*Fim Cabeçalho*/
 
+/*Início Apresentação*/
+h1{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--cor-texto);
+}
 
+h2{
+    max-width: 940px;
+    font-size: 7rem;
+    font-weight: 400;
+    color: var(--cor-texto);
+}
+
+.textoSubTitulo{
+    max-width: 240px;
+    color: var(--cor-texto);
+    position: relative;
+    bottom: -85px;
+}
+/*Fim Apresentação*/
